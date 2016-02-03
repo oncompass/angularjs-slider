@@ -224,7 +224,7 @@ angular.module('rzModule', [])
           if (possibleSteps.length > 0) {
             self.visibleSteps = possibleSteps;
             angular.forEach(self.visibleSteps, function (step) {
-              var stepLabel = angular.element('<span class="bubble"></span>');
+              var stepLabel = angular.element('<span class="bubble step"></span>');
               stepLabel.appendTo(self.sliderElem);
             });
           }
@@ -1059,9 +1059,9 @@ angular.module('rzModule', [])
         '<span class="pointer"></span>' + // 3 Right slider handle
         '<span class="bubble limit"></span>' + // 4 Floor label
         '<span class="bubble limit"></span>' + // 5 Ceiling label
-        '<span class="bubble above-left"></span>' + // 6 Label above left slider handle
-        '<span class="bubble above-right"></span>' + // 7 Label above right slider handle
-        '<span class="bubble above-close"></span>', // 8 Range label when the slider handles are close ex. 15 - 17
+        '<span class="bubble"></span>' + // 6 Label above left slider handle
+        '<span class="bubble"></span>' + // 7 Label above right slider handle
+        '<span class="bubble"></span>', // 8 Range label when the slider handles are close ex. 15 - 17
 
         link: function (scope, elem, attr) {
           return new Slider(scope, elem, attr);
