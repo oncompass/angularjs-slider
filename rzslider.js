@@ -1061,7 +1061,7 @@ angular.module('rzModule', [])
         '<span class="bubble limit"></span>' + // 5 Ceiling label
         '<span class="bubble"></span>' + // 6 Label above left slider handle
         '<span class="bubble"></span>' + // 7 Label above right slider handle
-        '<span class="bubble"></span>', // 8 Range label when the slider handles are close ex. 15 - 17
+        '<span class="bubble cmblab"></span>', // 8 Range label when the slider handles are close ex. 15 - 17
 
         link: function (scope, elem, attr) {
           return new Slider(scope, elem, attr);
